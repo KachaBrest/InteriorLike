@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 20%;
+  height: 100vh;
+}
+
+body{
+  background: #c5b3a3;
+  display: flex;
+}
+
+.slogan{
+  height: 20%;
+  background: #8c7a70;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+}
+
+.slogan_text_off{
+  font-family: 'Dancing Script', cursive;
+  font-size: 200%;
+  color: #7e7a79;
+  animation: neon-1 .1s ease-in-out infinite alternate;
+}
+
+@keyframes neon-1 {
+  from {
+    text-shadow: 0 0 6px rgba(220, 220, 220, 0.92), 0 0 30px rgba(220, 220, 220, 0.34), 0 0 12px rgba(191, 226, 255, 0.52);
+  }
+  to {
+    text-shadow: 0 0 6px rgba(220, 220, 220, 0.98), 0 0 30px rgba(220, 220, 220, 0.42), 0 0 12px rgba(191, 226, 255, 0.58);
+  }
+}
+
+.slogan_text_on{
+  font-family: 'Dancing Script', cursive;
+  font-size: 250%;
+  color: #744b98;
+  animation: neon-2 .1s ease-in-out infinite alternate;
+}
+
+@keyframes neon-2 {
+  from {
+    text-shadow: 0 0 6px rgba(121, 51, 148, 0.92), 0 0 30px rgba(121, 51, 148, 0.34), 0 0 12px rgb(203, 150, 215), 0 0 21px rgb(223, 191, 255), 0 0 34px rgba(121, 51, 148, 0.78), 0 0 54px rgba(121, 51, 148, 0.92);
+  }
+  to {
+    text-shadow: 0 0 6px rgba(121, 51, 148, 0.98), 0 0 30px rgba(121, 51, 148, 0.42), 0 0 12px rgb(199, 155, 217), 0 0 22px rgb(221, 191, 255), 0 0 38px rgba(121, 51, 148, 0.88), 0 0 60px #FFF;
+  }
+}
+
+h5{
+  margin-left: 20px;
+  font-size: 100%;
+  font-family: 'Dancing Script', cursive;
+}
+
+.nav_conteiner:hover{
+  background: #8c7a70;
+  padding: 5px 30px;
+  border-radius: 50px;
+  text-decoration:none;
+  color: white;
+}
+
+.nav_box{
+  width: 100%;
+}
+
+.navigation {
+  height: 80%;
+  background: #59524f;
+  align-items: flex-start;
+  display: flex;
+}
+
+.nav{
+  display: flex;
+  width: 100%;
+  margin: 30% 10%;
+  align-items: center;
+}
+
+a{
+  display: flex;
+  align-items: center;
+  text-decoration:none;
+  color: white;
+}
+
+.My_container{
+  padding: 50px;
+  width: 80%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+h1{
+  font-size: 3em;
+  margin-bottom: 0.25em;
+  color: #59524f;
+}
+
+h3{
+  font-size: 1.2em;
+  margin-bottom: 0.25em;
+  color: #59524f;
+}
+
+.nav_svg {
+  width: 2em;
+  height: 2em;
+  fill: #f0f0f2;
+  stroke: #f0f0f2;
+}
+
+.image_flex{
+  padding-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  overflow: hidden;
+  height: 72vh;
+}
+
+.cart{
+  max-width: 300px;
+  height: 250px;
+  overflow: hidden;
+  border: 1px solid black;
+  border-radius: 40px;
+  flex: 1 1 calc((100% / 4) - 2rem);
+}
+
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.foto{
+  height: 77%;
+}
+
+.cart_footer{
+  height: 23%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #8c7a70;
+}
+
+.input_heart_Dislike{
+  border-radius: 20px;
+  background: #c5b3a3;
+  cursor: pointer;
+  text-align: center;
+  font-size: 30px;
+}
+
+.input_heart_Dislike:hover{
+  border-radius: 30px;
+  background: black;
+  cursor: pointer;
+  text-align: center;
+  font-size: 30px;
+  padding: 5px;
+}
+
+.input_heart_Like{
+  border-radius: 20px;
+  background: #c5b3a3;
+  cursor: pointer;
+  text-align: center;
+  font-size: 30px;
+}
+.input_heart_Like:hover{
+  border-radius: 30px;
+  background: red;
+  cursor: pointer;
+  text-align: center;
+  font-size: 30px;
+  padding: 5px;
+
+}
+
+.the_end{
+  margin: auto;
+  display: none;
+  opacity: 0;
+}
+
+.favorite_container{
+  background: #c5b3a3;
+  margin: auto;
+}
+
+.mb-3{
+  width: 50vw;
+  height: 10vh;
+  margin-bottom: 0rem!important;
+}
+
+.form-control{
+  border-radius: 20px;
+  height: 50%;
+  width: 47%;
+}
+
+.btn-primary{
+  border-radius: 26px;
+  height: 4%;
+  width: 40%;
+}
+
+.form_cart{
+  width: 50%;
+  margin: auto;
+}
+
+.favorite_div{
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 10px auto;
+}
+
+.btn-logout{
+  border-radius: 26px;
+  height: 4%;
+  width: 100%;
+}
+
+.cabinet_error{
+  color: red;
+  font-size: 25px;
+}
+
+.about_conteiner{
+  background-image: url(../../pic/bg.jpg);
+  width: 80%;
+  display: flex;
+  overflow: hidden;
+}
+
+.resume{
+  height: 90%;
+  margin: auto;
+  transition: 1s;
+}
+
+.resume:hover{
+  transition: 2s;
+  transform: scale(1.3) translate(0px, 50px);
+  z-index: 2;
+}
+
+.pen{
+  height: 55%;
+  position: absolute;
+  top: 44%;
+  left: 20%;
+}
+
+.coffee{
+  height: 49%;
+  position: absolute;
+  top: 6%;
+  left: 74%;
+}
+
+
+
