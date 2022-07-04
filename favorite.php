@@ -8,17 +8,19 @@ include_once './views/html/header.php';
             <img src="../../pic/My.gif" width="100%">
         </div>
 <?php
-        for ($n = 0; $n <= (count($_SESSION['src']) - 1); $n++) {
-        echo '
+    if (isset($_SESSION['src'])) {
+        foreach ($_SESSION['src'] as $item => $src) {
+            echo '
         <div class="cart">
             <div class="foto">
-                <img src="' . $_SESSION['src'][$n] . '">
+                <img src="' . $src . '">
             </div>
             <div class="cart_footer">
-               <span title="Dislike" id="'.$n.'" class="input_heart_Dislike ClickFAV">&#128148</span>
+               <span title="Dislike" id="' . $item . '" class="input_heart_Dislike ClickFAV">&#128148</span>
             </div>
         </div>
         ';
+        };
     };
         ?>
     </div>
@@ -26,4 +28,3 @@ include_once './views/html/header.php';
 <script src="../../js/favorite.js"></script>
 </body>
 </html>
-

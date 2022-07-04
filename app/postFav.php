@@ -6,3 +6,5 @@ $response = json_decode($responseJson, true);
 
 $id = $response['id'];
 
+unset($_SESSION['src']["$id"]);
+
